@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    color: $main-color-text;
+  }
+  
+  body {
+    background-color: $main-bg !important;
+    font-size: $main-font-size;
+    position: relative;
+    font-size: 700;
+    font-family: "Interstate", "Lucida Grande",Arial,sans-serif !important;
+  }
+  
+  
+  .spinner-container {
+    margin: 10rem;
+  }
+  .container{
+    background: $main-container-bg;
+  }
+  
+  .card {
+    background: $main-card-bg !important;
+    border: 1px solid $main-brown !important;
+  
+    .card-header {
+      border-bottom: 1px solid $main-brown !important;
+      font-size: 20px !important;
+      color: $main-color-text !important;
+    }
+  }
