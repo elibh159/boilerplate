@@ -1,0 +1,13 @@
+@import "src/scss/variables";
+
+.card{
+   background: $second-card-bg !important;
+}
+
+@media (min-width: 576px) {
+   .card-group {
+      .card {
+         min-height: 30rem;
+      }
+   }
+}

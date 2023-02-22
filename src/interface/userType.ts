@@ -1,5 +1,10 @@
-export interface UserType {
-    "username": string;
-    "access_token": string;
-    "access_token_expration": string;
+
+export interface LoginType {
+    username: string;
+    password: string;
+}
+
+export interface RegisterType extends LoginType {
+    first_name: string;
+    last_name: string;
 }

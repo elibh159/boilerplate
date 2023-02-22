@@ -11,6 +11,6 @@ export interface SigninCallbacktype {
 }
 export interface AuthContextType {
     user: string;
-    signin: (username: string, password: string, callback: any) => Promise<SigninCallbacktype>;
+    signin: (username: string, password: string, callback: any) => Promise<any>;
     signout: (callback: VoidFunction) => void;
 }

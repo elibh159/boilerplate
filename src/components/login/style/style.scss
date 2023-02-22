@@ -1,5 +1,26 @@
 @import "src/scss/variables";
 
-.card{
+.card {
    background: $second-card-bg !important;
+}
+
+@media (min-width: 576px) {
+   .card-group {
+      .card {
+         min-height: 30rem;
+         form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+         }
+         .flex-bottom{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            height: 100%;
+         }
+      }
+   }
 }

@@ -15,14 +15,13 @@ const AuthProvider = ({ children }: { children: React.ReactNode }) => {
 
     const signin = (username: string, password: string, callback: any) => {
         return fakeAuthProvider.signin(username, password, (res: any) => {
-            setUser(res.result.username);
+            setUser(res.username);
             callback(res);
             const result = res.result;
             const expires = new Date(result.access_token_expration);
             setToken(result.access_token, expires);
         });
     };
-
 
     const signout = (callback: VoidFunction) => {
         return fakeAuthProvider.signout(() => {

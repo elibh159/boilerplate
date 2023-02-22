@@ -1,7 +1,7 @@
 import axios from "axios";
 import { getToken } from "./auth";
 
-const APP_API_URL = "http://137.74.230.245:81";// process.env.REACT_APP_APPLICATION_API_URL ||
+const APP_API_URL = process.env.REACT_APP_APPLICATION_API_URL;
 
 const getUrl = () => `${APP_API_URL}`;
 

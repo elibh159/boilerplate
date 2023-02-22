@@ -22,12 +22,12 @@ const AppHeader = () => {
           <Nav className="me-auto">
             <NavLink to="/home">Home</NavLink>
             <NavLink to="/playList">PlayList</NavLink>
-            <NavLink to="/login">login</NavLink>
+            <NavLink to="/login">Login</NavLink>
             <NavLink to="/register">Register</NavLink>
 
           </Nav>
           <Navbar.Text>
-            {"Hello " + auth.user}
+            <Link to="/">{"Hello " + auth.user}</Link>
             <Link to="/login">LogOut</Link>
           </Navbar.Text>
         </Navbar.Collapse>

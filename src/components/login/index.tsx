@@ -53,80 +53,76 @@ const Login = () => {
   });
 
   return (
-    <Container fluid className='text-center'>
-      <Row className='justify-content-center align-items-center m-5'>
-        <Col md="6">
-          <CardGroup>
-            <Card className="p-4">
-              <Formik
-                validationSchema={validationSchema}
-                initialValues={initValues}
-                onSubmit={submitHandler}
-                enableReinitialize
-              >
-                <Form>
-                  <Container className="logo-container">
-                  </Container>
-                  <h1>Login</h1>
-                  <p className="text-muted">Sign In to your account</p>
-                  <InputGroup className="mb-3">
-                    <div className="input-group">
+    <CardGroup>
+      <Card className="p-4">
+        <Formik
+          validationSchema={validationSchema}
+          initialValues={initValues}
+          onSubmit={submitHandler}
+          enableReinitialize
+        >
+          <Form>
+            <Container className="logo-container">
+            </Container>
+            <h1>Login</h1>
+            <p className="text-muted">Sign In to your account</p>
+            <div className='flex-bottom'>
+              <InputGroup className="mb-3">
+                <div className="input-group">
 
-                      <Field
-                        name="username"
-                        value={initValues.username}
-                        type="text"
-                        placeholder="Username"
-                        autoComplete="username"
-                        onChange={handleInputChange}
-                        className="form-control"
-                      />
-                    </div>
-                    <ErrorMessage
-                      name="username"
-                      component={TextError}
-                      className="invalid-feedback"
-                    />
-                  </InputGroup>
-                  <InputGroup className="mb-4">
-                    <div className="input-group">
-                      <Field
-                        name='password'
-                        value={initValues.password}
-                        type="password"
-                        placeholder="Password"
-                        autoComplete="current-password"
-                        onChange={handleInputChange}
-                        className="form-control"
-                      />
-                    </div>
-                    <ErrorMessage
-                      name="password"
-                      component={TextError}
-                      className="invalid-feedback"
-                    />
-                  </InputGroup>
-                  <Row>
-                    <Col md="6" className="d-grid gap-2">
-                      <Button
-                        color="primary"
-                        type="submit"
-                      >
-                        Login
-                      </Button>
-                    </Col>
+                  <Field
+                    name="username"
+                    value={initValues.username}
+                    type="text"
+                    placeholder="Username"
+                    autoComplete="username"
+                    onChange={handleInputChange}
+                    className="form-control"
+                  />
+                </div>
+                <ErrorMessage
+                  name="username"
+                  component={TextError}
+                  className="invalid-feedback"
+                />
+              </InputGroup>
+              <InputGroup className="mb-4">
+                <div className="input-group">
+                  <Field
+                    name='password'
+                    value={initValues.password}
+                    type="password"
+                    placeholder="Password"
+                    autoComplete="current-password"
+                    onChange={handleInputChange}
+                    className="form-control"
+                  />
+                </div>
+                <ErrorMessage
+                  name="password"
+                  component={TextError}
+                  className="invalid-feedback"
+                />
+              </InputGroup>
+              <Row>
+                <Col md="6" className="d-grid gap-2">
+                  <Button
+                    color="primary"
+                    type="submit"
+                  >
+                    Login
+                  </Button>
+                </Col>
 
-                    <Col md="6">
-                      {(error) && <p className="text-danger">{error}</p>}
-                    </Col>
-                  </Row>
-                </Form>
-              </Formik>
-            </Card>
-          </CardGroup>
-        </Col>
-      </Row>
-    </Container>
+                <Col md="6">
+                  {(error) && <p className="text-danger">{error}</p>}
+                </Col>
+              </Row>
+            </div>
+          </Form>
+        </Formik>
+      </Card>
+    </CardGroup>
   );
 };
 

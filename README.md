@@ -22,7 +22,11 @@ In this project, I used a Api for login but This represents some generic auth pr
 
 # Run
 
-In the project directory, you can run:
+#### set API URL in the Local Environment Variables
+
+In the project directory, you should create a new `.env.local` and 
+add Server address for connection to backend, called `REACT_APP_APPLICATION_API_URL` then
+you can run:
 
 #### npm start
 
