@@ -84,5 +84,13 @@ This project have 2 pages:
     - REGISTER
 
     - PLAYLIST
- # helpful site
+ # helpful site and command
+ example for manage route by auth:
  https://stackblitz.com/github/remix-run/react-router/tree/main/examples/auth?file=src%2FApp.tsx
+
+example for infinity use query:
+https://github.com/OtamNitram/movies-react-query
+
+disable web security chrome _ for cors error _
+find chrome path in windows then run this code
+`chrome --disable-web-security --user-data-dir="C:/ChromeDevSession"`
