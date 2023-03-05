@@ -85,12 +85,18 @@ This project have 2 pages:
 
     - PLAYLIST
  # helpful site and command
- example for manage route by auth:
- https://stackblitz.com/github/remix-run/react-router/tree/main/examples/auth?file=src%2FApp.tsx
+    
+    - example for manage route by auth:
+    https://stackblitz.com/github/remix-run/react-router/tree/main/examples/auth?file=src%2FApp.tsx
 
-example for infinity use query:
-https://github.com/OtamNitram/movies-react-query
+    - example for infinity use query:
+    https://github.com/OtamNitram/movies-react-query
 
-disable web security chrome _ for cors error _
-find chrome path in windows then run this code
-`chrome --disable-web-security --user-data-dir="C:/ChromeDevSession"`
+    - disable web security chrome _ for cors error _
+    find chrome path in windows then run this code
+    
+    `chrome --disable-web-security --user-data-dir="C:/ChromeDevSession"`
+
+    - TypeScript Good reads:
+    https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/basic_type_example/
+    https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/basic_type_example/
